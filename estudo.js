@@ -1,4 +1,3 @@
-
 // alert("Oi! Eu sou o Alert");
 // document.write("Estou na página.");
 // console.log("Eu estou no console.");
@@ -56,6 +55,23 @@ function quadrado(){
 function total(){
     let val = document.getElementById("valor").value;
     let ju = document.getElementById("juros").value;
+
+if(!Number(val)){
+    alert("O valor deve ser um número.");
+    document.getElementById("valor").value = "";
+    document.getElementById("valor").focus();
+
+    return
+}
+
+if(!Number(ju)){
+    alert("O valor do juro deve ser um número.");
+    document.getElementById("valor").value = "";
+    document.getElementById("valor").focus();
+
+    return
+}        
+
     let resultado = (val * ((ju/100)+1));
     document.write("O total é de: " + resultado);
 }
