@@ -19,3 +19,11 @@ body {
     background: rgb(160, 23, 130);
     color: rgb(255, 255, 255);
     cursor: pointer;
+}
+.spResultado{
+    background: aqua;
+    color: blue;
+    padding: 4px;
+    margin: 2px;
+
+}
